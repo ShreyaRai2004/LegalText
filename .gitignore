@@ -8,3 +8,5 @@ data/*.csv
 data/*.db
 data/dataset_metadata.json
 *.log
+artifacts/distilbert_model/
+.env

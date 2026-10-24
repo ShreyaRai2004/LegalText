@@ -1,0 +1,100 @@
+{
+  "model": "distilbert-base-uncased",
+  "model_type": "DistilBERT fine-tuned for sequence classification",
+  "train_size": 5088,
+  "test_size": 1500,
+  "num_labels": 10,
+  "max_length": 128,
+  "epochs": 1,
+  "accuracy": 0.9833333333333333,
+  "macro_f1": 0.9784735795163725,
+  "weighted_f1": 0.9834008562276824,
+  "classification_report": {
+    "Amendments": {
+      "precision": 0.9916666666666667,
+      "recall": 0.9596774193548387,
+      "f1-score": 0.9754098360655737,
+      "support": 124.0
+    },
+    "Assignments": {
+      "precision": 0.9797979797979798,
+      "recall": 0.97,
+      "f1-score": 0.9748743718592965,
+      "support": 100.0
+    },
+    "Counterparts": {
+      "precision": 0.9951690821256038,
+      "recall": 0.9951690821256038,
+      "f1-score": 0.9951690821256038,
+      "support": 207.0
+    },
+    "Entire Agreements": {
+      "precision": 0.9842931937172775,
+      "recall": 1.0,
+      "f1-score": 0.9920844327176781,
+      "support": 188.0
+    },
+    "Expenses": {
+      "precision": 0.9512195121951219,
+      "recall": 0.9512195121951219,
+      "f1-score": 0.9512195121951219,
+      "support": 82.0
+    },
+    "Governing Laws": {
+      "precision": 0.9957446808510638,
+      "recall": 0.9790794979079498,
+      "f1-score": 0.9873417721518988,
+      "support": 239.0
+    },
+    "Notices": {
+      "precision": 0.9895833333333334,
+      "recall": 0.9895833333333334,
+      "f1-score": 0.9895833333333334,
+      "support": 192.0
+    },
+    "Severability": {
+      "precision": 0.99375,
+      "recall": 0.99375,
+      "f1-score": 0.99375,
+      "support": 160.0
+    },
+    "Survival": {
+      "precision": 0.9841269841269841,
+      "recall": 0.9841269841269841,
+      "f1-score": 0.9841269841269841,
+      "support": 126.0
+    },
+    "Terms": {
+      "precision": 0.9090909090909091,
+      "recall": 0.975609756097561,
+      "f1-score": 0.9411764705882353,
+      "support": 82.0
+    },
+    "accuracy": 0.9833333333333333,
+    "macro avg": {
+      "precision": 0.9774442341904939,
+      "recall": 0.9798215585141392,
+      "f1-score": 0.9784735795163725,
+      "support": 1500.0
+    },
+    "weighted avg": {
+      "precision": 0.9836813455561144,
+      "recall": 0.9833333333333333,
+      "f1-score": 0.9834008562276824,
+      "support": 1500.0
+    }
+  },
+  "labels": [
+    "Amendments",
+    "Assignments",
+    "Counterparts",
+    "Entire Agreements",
+    "Expenses",
+    "Governing Laws",
+    "Notices",
+    "Severability",
+    "Survival",
+    "Terms"
+  ],
+  "note": "Results are from one fine-tuning epoch. The baseline uses a different model."
+}
