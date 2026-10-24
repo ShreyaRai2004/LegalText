@@ -29,7 +29,7 @@ st.write(
 
 @st.cache_resource
 def get_distilbert():
-    return load_distilbert(DISTILBERT_DIR)
+    return load_distilbert()
 
 
 @st.cache_resource

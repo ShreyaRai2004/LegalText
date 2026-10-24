@@ -18,18 +18,23 @@ def load_baseline(path: Path):
     return joblib.load(path)
 
 
-def load_distilbert(path: Path):
-    """Load the trained DistilBERT model and tokenizer."""
-    if not (path / "config.json").exists():
-        raise FileNotFoundError(
-            f"DistilBERT model not found at {path}. "
-            "Run python -m src.train_distilbert first."
-        )
+
+def load_distilbert(path: Path | None = None):
+    """Load the trained DistilBERT model locally or from Hugging Face."""
+
+    model_id = "Sret12/legaltext-distilbert"
+
+    # Use local files when available; otherwise download from Hugging Face.
+    if path is not None and (path / "config.json").exists():
+        model_source = str(path)
+    else:
+        model_source = model_id
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    tokenizer = AutoTokenizer.from_pretrained(str(path))
-    model = AutoModelForSequenceClassification.from_pretrained(str(path))
+    tokenizer = AutoTokenizer.from_pretrained(model_source)
+    model = AutoModelForSequenceClassification.from_pretrained(model_source)
+
     model.to(device)
     model.eval()
 
@@ -38,6 +43,7 @@ def load_distilbert(path: Path):
         "tokenizer": tokenizer,
         "device": device,
     }
+
 
 
 def predict_text(model, text: str):
