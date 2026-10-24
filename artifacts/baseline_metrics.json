@@ -1,0 +1,97 @@
+{
+  "dataset": "LexGLUE LEDGAR (selected subset)",
+  "train_size": 6000,
+  "test_size": 1500,
+  "labels": [
+    "Amendments",
+    "Assignments",
+    "Counterparts",
+    "Entire Agreements",
+    "Expenses",
+    "Governing Laws",
+    "Notices",
+    "Severability",
+    "Survival",
+    "Terms"
+  ],
+  "accuracy": 0.9853333333333333,
+  "macro_f1": 0.9819476096538257,
+  "weighted_f1": 0.9853926224250792,
+  "training_seconds": 1.884802700000364,
+  "inference_seconds_total": 0.2050985000005312,
+  "classification_report": {
+    "Amendments": {
+      "precision": 0.9457364341085271,
+      "recall": 0.9838709677419355,
+      "f1-score": 0.9644268774703557,
+      "support": 124.0
+    },
+    "Assignments": {
+      "precision": 0.9519230769230769,
+      "recall": 0.99,
+      "f1-score": 0.9705882352941176,
+      "support": 100.0
+    },
+    "Counterparts": {
+      "precision": 1.0,
+      "recall": 0.9951690821256038,
+      "f1-score": 0.9975786924939467,
+      "support": 207.0
+    },
+    "Entire Agreements": {
+      "precision": 0.9841269841269841,
+      "recall": 0.9893617021276596,
+      "f1-score": 0.986737400530504,
+      "support": 188.0
+    },
+    "Expenses": {
+      "precision": 1.0,
+      "recall": 0.9878048780487805,
+      "f1-score": 0.9938650306748467,
+      "support": 82.0
+    },
+    "Governing Laws": {
+      "precision": 1.0,
+      "recall": 0.9874476987447699,
+      "f1-score": 0.9936842105263158,
+      "support": 239.0
+    },
+    "Notices": {
+      "precision": 0.9895287958115183,
+      "recall": 0.984375,
+      "f1-score": 0.9869451697127938,
+      "support": 192.0
+    },
+    "Severability": {
+      "precision": 1.0,
+      "recall": 0.99375,
+      "f1-score": 0.9968652037617555,
+      "support": 160.0
+    },
+    "Survival": {
+      "precision": 0.9919354838709677,
+      "recall": 0.9761904761904762,
+      "f1-score": 0.984,
+      "support": 126.0
+    },
+    "Terms": {
+      "precision": 0.9506172839506173,
+      "recall": 0.9390243902439024,
+      "f1-score": 0.9447852760736196,
+      "support": 82.0
+    },
+    "accuracy": 0.9853333333333333,
+    "macro avg": {
+      "precision": 0.981386805879169,
+      "recall": 0.9826994195223128,
+      "f1-score": 0.9819476096538257,
+      "support": 1500.0
+    },
+    "weighted avg": {
+      "precision": 0.985602343723428,
+      "recall": 0.9853333333333333,
+      "f1-score": 0.9853926224250792,
+      "support": 1500.0
+    }
+  }
+}
