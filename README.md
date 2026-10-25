@@ -1,4 +1,10 @@
 # LegalText — AI-Powered Legal Clause Classification
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![DistilBERT](https://img.shields.io/badge/Model-DistilBERT-yellow)](https://huggingface.co/Sret12/legaltext-distilbert)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/)
+[![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Dataset](https://img.shields.io/badge/Dataset-LEDGAR-green)](https://huggingface.co/datasets/coastalcph/lex_glue)
 
 LegalText is an NLP-based application that classifies legal contract clauses into 10 predefined categories using a fine-tuned DistilBERT model. It combines transformer-based text classification with a traditional machine learning baseline to compare model performance and demonstrate practical NLP techniques for legal text.
 
