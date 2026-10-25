@@ -73,3 +73,9 @@ The baseline achieved slightly higher scores on the recorded evaluation. This co
 - Confidence scores are not guarantees of correctness.
 - The application classifies text; it does not determine contract validity or provide legal advice.
 
+ ## Author
+
+**Shreya S Rai**
+
+MCA Student
+
